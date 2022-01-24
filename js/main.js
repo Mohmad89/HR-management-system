@@ -9,7 +9,9 @@ function employee_generate(employee_id, full_name, department, level) {
 
 // Random Salary Function
 employee_generate.prototype.random_salary = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+    let sal = Math.floor(Math.random() * (max - min + 1) + min);
+    let sal_with_tax = sal * 7.5 % - sal;
+    return sal_with_tax;
 }
 
 // DOM Function
