@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style/home.css">
+    <!-- Font Awesome -->
+    <!-- Font Awseme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Home</h1>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">AboutUs</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <form id="emp-form">
+            <fieldset>
+                <legend class="legend">Employee Info</legend>
+                <div class="main-div">
+                    <div class="form-main" style="padding: 10px 20px;">
+
+                        <div class="form-contact">
+                            <label for="firstName">First Name : </label><br>
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+                        </div>
+
+                        <div class="form-contact">
+                            <label for="lastName">Last Name : </label><br>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+                        </div>
+
+                        <div class="form-contact">
+                            <label for="department">Department : </label><br>
+                            <select id="department" name="department">
+                                <option value="" selected>Select</option>
+                                <option value="Adminstration">Adminstration</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Development">Development</option>
+                                <option value="Finance">Finance</option>
+                            </select>
+                        </div>
+                        <div class="form-contact">
+                            <label for="level">Level : </label><br>
+                            <select id="level" name="level">
+                                <option value="" selected>Select</option>
+                                <option value="Senior">Senior</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Mid-Sinior">Mid-Senior</option>
+                            </select>
+                        </div>
+                        <div class="form-contact">
+                            <label for="image">Your Image Is : </label><br>
+                            <select id="image" name="image">
+                                <option value="" selected="selected">Select</option>
+                                <option value="Mael">Mael</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-contact">
+                            <input type="submit" class="submit-button" name="button" id="button">
+                        </div>
+                    </div>
+                    <div class="img-div" style="width: 100%; height: 100%;">
+                        <img src="assets/clipboard.png" style="width: 300px;height: 500px;" alt="">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <!-- End Form-Section -->
+
+    <!-- Content-Section -->
+    <section class="content-section">
+        <h1 class="title">Employees</h1>
+        <hr>
+        <section class="sections">
+            <h2 class="title">Adminstration</h2>
+            <div class="contentA">
+
+            </div>
+        </section>
+        <hr>
+        <section class="sections">
+            <h2 class="title">Marketing</h2>
+            <div class="contentM">
+
+            </div>
+        </section>
+        <hr>
+        <section class="sections">
+            <h2 class="title">Development</h2>
+            <div class="contentD">
+
+            </div>
+        </section>
+        <hr>
+        <section class="sections">
+            <h2 class="title">Finance</h2>
+            <div class="contentF">
+
+            </div>
+        </section>
+
+    </section>
+    <!-- End Content-Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span class="footer-title">Mohammad Adarbeh</span></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mohammad-al-adarbeh-447491220/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=100005731149954" target="_blank"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/e_adarbeh" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Script Tag -->
+    <script src="js/home.js"></script>
+</body>
+
+</html>
