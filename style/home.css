@@ -145,6 +145,7 @@ input , select{
     display: flex;
     overflow: hidden;
     justify-content:center;
+    overflow: hidden;
 }
 .info {
     text-align: center;
