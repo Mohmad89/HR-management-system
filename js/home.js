@@ -18,9 +18,11 @@ function Employee(f_name, l_name, department, level, image) {
 }
 
 // Unique  Id Function
+let a = 1000;
 Employee.prototype.random_id = function () {
-    var id = new Date().getUTCMilliseconds();
-    return id;
+    // var id = new Date().getUTCMilliseconds();
+    a = a+1;
+    return a;
 }
 
 // render Function 
@@ -48,11 +50,7 @@ Employee.prototype.render = function () {
             break;
 
     }
-
-    if (this.image === "Mael")
-        img.setAttribute('src', `../assets/${this.image}.png`);
-    else if (this.image === "Female")
-        img.setAttribute('src', `../assets/${this.image}.png`);
+    img.setAttribute('src', `${this.image}`);
     div_icons.appendChild(img);
 
     h_name.textContent = `${this.f_name} ${this.l_name}`;
