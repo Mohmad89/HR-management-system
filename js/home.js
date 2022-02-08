@@ -21,9 +21,11 @@ function checkLocalAndPush() {
     }
 }
 // Unique  Id Function
+let a = 1000;
 function unique() {
-    var id = new Date().getUTCMilliseconds();
-    return id;
+    // var id = new Date().getUTCMilliseconds();
+    a++;
+    return a;
 }
 
 //read local storage function
@@ -86,10 +88,7 @@ function render(arr) {
                 break;
         }
         //Determine the image for users
-        if (arr[i].obj_image === "Mael")
-            img.setAttribute('src', `../assets/${arr[i].obj_image}.png`);
-        else if (arr[i].obj_image === "Female")
-            img.setAttribute('src', `../assets/${arr[i].obj_image}.png`);
+        img.setAttribute('src', `${arr[i].obj_image}`);
         div_icons.appendChild(img);
 
         h_name.textContent = `${arr[i].obj_f_name} ${arr[i].obj_l_name}`;
