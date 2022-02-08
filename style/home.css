@@ -32,6 +32,25 @@ header{
 .navigation a:hover {
     color: #991cfc;
 }
+button{
+    border: 2px solid red;
+    padding: 5px 14px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:white;
+    color: black;
+    transition:0.7s ease;
+    cursor: pointer;
+    font-weight: 700;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+button:hover{
+    transform: scale(1.06);
+    background-color:#3a6cf4;
+    animation-duration: 0s;
+    border-color: black;
+}
 
 /* Main */
 
