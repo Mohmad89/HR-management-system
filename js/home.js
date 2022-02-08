@@ -22,10 +22,18 @@ function checkLocalAndPush() {
 }
 // Unique  Id Function
 let a = 1000;
+
 function unique() {
     // var id = new Date().getUTCMilliseconds();
     a++;
     return a;
+
+Employee.prototype.random_id = function () {
+    // var id = new Date().getUTCMilliseconds();
+    a = a+1;
+    return a;
+
+
 }
 
 //read local storage function
@@ -37,6 +45,16 @@ function readFromLocal() {
     } else {
         return [];
     }
+
+    img.setAttribute('src', `${this.image}`);
+    div_icons.appendChild(img);
+
+    h_name.textContent = `${this.f_name} ${this.l_name}`;
+    div_info.appendChild(h_name);
+    p_info.textContent = `Deparatment: ${this.department} - Level: ${this.level} - ${this.emp_id} `
+    div_info.appendChild(p_info);
+};
+
 }
 // Random Salary Function
 function random_salary(level) {
@@ -63,6 +81,7 @@ function render(arr) {
     div_contentD.innerHTML = "";
     div_contentM.innerHTML = "";
     div_contentF.innerHTML = "";
+
 
     // separate department section
     for (let i = 0; i < arr.length; i++) {
